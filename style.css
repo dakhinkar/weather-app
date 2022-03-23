@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.weather-page{
+    background-color: #56CCF2;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.location-section, .temperature-details{
+    width: 50%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temperature-details{
+    justify-content: center;
+}
+
+.temperature-details h2{
+    display: inline;
+}
