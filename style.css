@@ -1,32 +1,89 @@
+
 *{
-    padding: 0;
     margin: 0;
-
+    padding: 0;
 }
 
-.weather-page{
-    background-color: #56CCF2;
-    display: flex;
-    flex-direction: column;
+body{
+    overflow: hidden;
+    width: 100%;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-
+    background-color:#56CCF2;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx1lOxIl4pzUNu9zsMMhdK1KfNwFZiizS1lA&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
-
-.location-section, .temperature-details{
-    width: 50%;
-    height: 35%;
+/* ============================== Main info container  ====== */
+.details{
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    color: white;
+
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+
+
+/* ========================== time and Date =====================*/
+#time{
+    font-size: 48px;
+    font-weight: 300;
+}
+
+#am-pm, .date, .timezone{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+/* ================== Weather Datils =================== */
+
+.w-details{
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
-.temperature-details{
-    justify-content: center;
+/* =================== Timezone ====================== */
+#timezone{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end ;
+}
+#timezone .location{
+    font-size: 30px;
 }
 
-.temperature-details h2{
-    display: inline;
+#timezone .country{
+    font-size: 15px;
+    justify-self: end;
+}
+
+/* Time zone selector */
+
+select{
+    padding: 10px;
+    width: 250px;
+}
+
+svg{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    vertical-align: middle;
+    padding: 4px;
 }

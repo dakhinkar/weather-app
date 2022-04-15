@@ -8,27 +8,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="weather-page">
-        <div class="location-section">
-            <div class="location">
-                <h1>location</h1>
+       
+    <div class="details">
+        <div class="weather-info">
+            <!-- Time and date Deatils -->
+            <div class="time-info">
+                <span class="time" id="time">12:50</span>
             </div>
-            <div class="weather-status">cloudy</div>
-        </div>
 
-        <div class="temperature-details">
-            <div class="temperature-value">
-                <h2>
-                    Temprature
-                </h2>
-                <span>F</span>
+            <div class="date">
+                <span id="year">YEAR, </span>
+                <span id="date">24</span>
+                <span id="month">March</span>
+            </div>
+
+            <div class="w-details">
+                <div class="weather-forecast">
+                    <span >Himunity :</span>
+                    <span id="humidity">256</span>
+                </div>
+                <div class="weather-forecast">
+                    <span >Pressure :</span>
+                    <span id="pressure">356</span>
+                </div>
+                <div class="weather-forecast">
+                    <span >Wind Speed :</span>
+                    <span id="wind-speed"> 256</span>
+                </div>
+               
+                <div class="temp">
+                    <span >Temparature :</span>
+                    <span id="temp-c">6 c</span>
+                </div>
             </div>
         </div>
-        <div class="details">
-            I am coundy
+        <div class="timezone-section">
+            <select name="selcect" id="timezone-select">none</select>
+            <!-- <button class="search button">  -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" onclick="setLocation()" /></svg>
+            <!-- </button> -->
+         </div>
+        <div class="timezone" id="timezone"> 
+            <p class="location">Asia/kolkata</p>
+            <p class="country">IN</p>
         </div>
     </div>
-   
+    <div class="future-weather">
+        
+    </div>
 
     
     <script src="script.js"></script>
