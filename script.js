@@ -1,6 +1,6 @@
 
 const API_KEY = '9a6d5124604e4735ad550445221504'; // API Key required to fetch deatils 
-const API = 'http://api.weatherapi.com/v1/current.json?key='; // Weather API URL
+const API = 'https://api.weatherapi.com/v1/current.json?key='; // Weather API URL
 let position = 'kolkata';   // location default we can changed it as per required
 
 // Month array
